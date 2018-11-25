@@ -1,9 +1,18 @@
-<html>
+<html ng-app="myFirstApp">
     <title>
         This is angular js
     </title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <body>
         I am going to use browser sync<br>
         This is the second version
     </body>
+    <div ng-controller="myFirstController">
+{{name}}
+{{sayHi()}}
+<br/>
+<input type="text" ng-model="name"/>
+<p>Value changed : {{number}}</p>
+    </div>
 </html>

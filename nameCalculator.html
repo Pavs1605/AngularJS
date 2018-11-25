@@ -1,0 +1,17 @@
+<html>
+    <title>
+        NameCalculator
+    </title>
+    <script src="angular.min.js"></script>
+    <script src="nameCalculator.js"></script>
+    <body ng-app="NameCalculator">
+        <h1>Name calculator</h1>
+        <div ng-controller="NumericValue">
+            <p>Name 
+                <input type="text" ng-model="name" ng-keyup="keyUpFunction()" />
+                </p>
+            <p>Sum of ascii values of the name given : {{number}} </p>
+                {{name}}
+        </div>
+    </body>
+</html>
