@@ -1,0 +1,22 @@
+  <html lang="en">
+    <head>
+      <title>Lunch Checker</title>
+      <script src="angular.min.js"></script>
+      <script src="app.js"></script>
+        </head>
+    <body ng-app="LunchCheck">
+     <div ng-controller="LunchCheckController">
+      <!--lunch menu-->
+      <h2> Please enter comma separated list of lunch items in the box below </h2>
+
+      <input id="inputLunch" type="text" size="90" ng-model="lunchboxitems"/>
+<br/><br/>
+<button id="checkButton" ng-click="itemsSizeCheck()">Check if too much</button>
+<h3> {{message}}</h4>     
+</div>
+
+<br/>
+
+    </body>
+
+</html>
